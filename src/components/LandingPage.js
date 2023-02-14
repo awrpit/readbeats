@@ -11,7 +11,7 @@ function LandingPage() {
 
   const loginHandler = () => {
     const clientId = "c752b152ff82448cacd501a8e8c1a29e"
-    const redirectUri = "http://localhost:3000/"
+    const redirectUri = "https://readingbeats.onrender.com/"
     const apiUrl = "https://accounts.spotify.com/authorize"
     const scope = [
       "user-read-email",

@@ -43,7 +43,7 @@ function Home() {
     try {
       setIsLoading(true)
       const response = await axios.post(
-        "https://readbeatsapi.up.railway.app/api/bookinfo",
+        "https://readbeatsapi.vercel.app/api/bookinfo",
         {
           bookName: userInput,
         }
@@ -53,7 +53,7 @@ function Home() {
       dispatch(setMusicData(musicData))
       try {
         const songs = await axios.post(
-          "https://readbeatsapi.up.railway.app/api/getsongs",
+          "https://readbeatsapi.vercel.app/api/getsongs",
           {
             musicData: musicData,
             token: token,
